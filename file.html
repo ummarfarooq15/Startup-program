@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>play</title>
+
+  <head>
+    <header>
+      <style>
+        :root {
+          --bg: #0b1220;
+          --card: rgba(255, 255, 255, 0.85);
+          --accent: #ff6b6b;
+          --text: #fbfffc;
+          --muted: #4a4a4a;
+        }
+
+        body {
+          color: var(--text);
+          background: url(https://r1.ilikewallpaper.net/iphone-wallpapers/download/98180/Paris-eiffel-tower-night-city-river-bridge-Android-iphone-wallpaper-ilikewallpaper_com.jpg);
+          background-size: cover;
+          background-attachment: fixed;
+          background-position: center;
+          min-height: 100vh;
+          display: list-item;
+          justify-content: center;
+          align-items: center;
+          padding: 0px;
+
+        }
+
+        .h1 {
+          color: #80a4aa;
+          word-spacing: 0.1em;
+          font-size: 60px;
+          line-height: 40%;
+        }
+        .p {
+          line-height: 100.5%;
+          color: #73a31b;
+          font-size: 20px;
+        }
+
+        .center {
+          text-align: center;
+        }
+
+        .input {
+          width: 100%;
+          padding: 12px 20px;
+          margin: 8px 0;
+          box-sizing: border-box;
+          border: 2px solid #bd3131;
+          border-radius: 4px;
+        }
+
+        .a {
+          color: #80a4aa;
+          word-spacing: 0.1em;
+          font-size: 40px;
+          line-height: 250%;
+          size: 50px;
+          height: 40px;
+        }
+
+        .input {
+          color: var(--card);
+        }
+
+        .fun-diy {
+          padding: 40px;
+          text-align: center;
+          color: #dfffe0;
+        }
+
+        .fun-container {
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+          gap: 15px;
+          margin: 20px 0;
+        }
+
+        .fun-card {
+          background: rgba(0, 0, 0, 0.5);
+          border: 1px solid #00ff88;
+          padding: 15px;
+          border-radius: 10px;
+          transition: 0.3s;
+        }
+
+        .fun-card:hover {
+          transform: scale(1.05);
+          background: rgba(0, 255, 136, 0.2);
+        }
+
+        button {
+          padding: 10px 20px;
+          background: #00ff88;
+          border: none;
+          border-radius: 8px;
+          cursor: pointer;
+          font-weight: bold;
+        }
+      </style>
+      <span class="center">
+        <h1 class="h1">Hello Buddy</h1>
+        <p class="p">Welcome to my profile</p>
+      </span>
+      <section class="fun-diy">
+        <h2>🌟 Fun DIY Corner</h2>
+        <p>Try these just for fun!</p>
+
+        <div class="fun-container">
+          <div class="fun-card">📝 Write a mini story in 5 lines</div>
+          <div class="fun-card">🎨 Draw something using only 3 colors</div>
+          <div class="fun-card">📦 Build something using waste materials</div>
+          <div class="fun-card">🌙 Create your own night sky art</div>
+          <div class="fun-card">🎭 Make a paper mask</div>
+          <div class="fun-card">📸 Recreate a photo at home</div>
+        </div>
+
+        <button onclick="newIdea()">🎲 Give Me a Random Idea</button>
+        <p id="idea-output"></p>
+      </section>
+      <script src="script.js"></script>
+
+      </body>
+    </header>
+  </head>
+
+</html>
